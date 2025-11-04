@@ -1,0 +1,143 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #222;
+}
+
+/* Navbar */
+.homeNavBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#homeIcon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: #2b2b2b;
+  font-weight: 600;
+}
+
+#homeIcon i {
+  color: #f97316; /* orange icon */
+  font-size: 22px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.navLinks p {
+  margin: 0;
+  cursor: pointer;
+  font-weight: 500;
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.navLinks p:hover {
+  color: #f97316;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(to bottom, #fff, #f9fafb);
+}
+
+.hero h1 {
+  font-size: 40px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero h4 {
+  color: #6b7280;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.hero button {
+  background-color: #f97316;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.hero button:hover {
+  background-color: #ea580c;
+}
+
+/* Category Section */
+h2 {
+  margin-left: 60px;
+  margin-top: 40px;
+  font-size: 26px;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+#categoryContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 20px 60px 60px;
+}
+
+/* Category Cards */
+.itemCard {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.itemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.itemCard img,
+.itemCard image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.itemCard h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 15px 15px 10px;
+  color: #111827;
+}
+
+.itemCard p {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 15px 20px;
+  line-height: 1.4;
+  height: 60px;
+  overflow: hidden;
+}

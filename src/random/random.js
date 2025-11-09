@@ -4,6 +4,9 @@ async function randomData() {
 
   try {
     const response = await fetch(randomAPIData);
+    if(!response.ok){
+      throw new error(`Server Error:, ${response.status}`)
+    }
     const data = await response.json();
     renderMealData(data.meals);
   }
@@ -40,7 +43,7 @@ function renderMealData(meals) {
   randombtn.innerHTML = `
   
   <section class="main-container"> 
-  <button class="back-btn">← Back</button>
+  <a href="http://127.0.0.1:5500/foodExplorer/src/index.html" id="homeField" class="back-btn">← Back</a>
 
     <div class="meal-hero">
       <img class="meal-hero-img" src="${strMealThumb}" alt="${strMeal}">

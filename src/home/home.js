@@ -41,7 +41,7 @@ function renderFoodItems(categories = []) {
     categoryContainer.appendChild(card);
 
     homeField.innerHTML = `
-      <a href="http://127.0.0.1:5500/src/index.html" id="homeField">Home</a>
+      <a href="http://127.0.0.1:5500/foodExplorer/src/index.html" id="homeField">Home</a>
 `;
   })
 }

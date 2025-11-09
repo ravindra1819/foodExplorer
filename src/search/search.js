@@ -63,9 +63,11 @@ function changeHandler(meals, searchValue) {
     const mealDiv = document.createElement('div');
     mealDiv.classList.add('meal-card');
     mealDiv.innerHTML = `
-      <img src='${strMealThumb}' alt='${strMeal}' />
+
+      <img class="meal-image" src='${strMealThumb}' alt='${strMeal}' />
       <h4>${strMeal}</h4>
       <p>${strArea}</p>
+
       `;
     searchCard.appendChild(mealDiv)
   });

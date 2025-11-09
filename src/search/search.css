@@ -1,4 +1,6 @@
-.searchHeader, .search-bar, .searchTagName {
+.searchHeader,
+.search-bar,
+.searchTagName {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,10 +49,32 @@
   background: #ff6a00;
 }
 
-#searchField{
+#searchField {
   background-color: white;
   border-color: white;
   border: none;
   font-size: medium;
   cursor: pointer;
+}
+
+#searchLabelId{
+  padding-left: 6%;
+}
+
+/* mealcard details */
+
+#searchList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 6%;
+}
+
+.meal-card {
+width: 22%;
+}
+
+.meal-image {
+  width: 100%;
 }
